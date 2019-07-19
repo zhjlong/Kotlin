@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingHorizontal="16dp"
+        tools:context=".fargment.MaterialEditTextFragment">
+
+    <com.zjl.rengwuxian.kotlindemo.view.MaterialEditText
+            android:id="@+id/username"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="16sp"
+            android:hint="username"
+            app:useFloatingLabel="true"
+            tools:ignore="MissingConstraints"/>
+
+    <com.zjl.rengwuxian.kotlindemo.view.MaterialEditText
+            android:id="@+id/password"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="16sp"
+            android:inputType="number"
+            android:hint="password"
+            tools:ignore="MissingConstraints"
+            app:useFloatingLabel="true"
+            app:layout_constraintTop_toBottomOf="@id/username"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
